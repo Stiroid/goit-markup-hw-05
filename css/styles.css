@@ -68,6 +68,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active::after {
@@ -107,6 +108,7 @@ ul {
   align-items: center;
   height: 16px;
   padding: 0;
+  
 }
 
 .contacts-nav-item a {
@@ -141,11 +143,13 @@ ul {
 .contacts-nav {
   width: 170px;
   height: 16px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-nav-item {
   max-width: 170px;
   height: 16px;
+  
 }
 
 .top-bg-image {
@@ -217,6 +221,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--adress-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Эффекты кнопок навигации */
 
@@ -225,7 +230,7 @@ ul {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .contacts-nav {
@@ -326,7 +331,7 @@ p {
 }
 
 .team-list {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.12));
 }
 
 /* Оглавления два */
@@ -373,6 +378,7 @@ p {
 .work-text {
   color: var(--hero-text-color);
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
@@ -396,6 +402,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .social-links .social-link {
@@ -405,15 +412,16 @@ p {
   justify-content: center;
   align-items: center;
   color: #afb1b8;
-
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* fill: currentColor; */
 }
 
 .social-links .social-link:hover,
 .social-links .social-link:focus {
   background-color: #2196f3;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 
   border-radius: 50%;
   fill: var(--top-background-color);
@@ -598,6 +606,8 @@ p {
   color: var(--hero-text-color);
   border-radius: 50%;
   fill: currentColor;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-list :not(:first-child) {
@@ -607,14 +617,16 @@ p {
 .join-icon {
   width: 20px;
   height: 20px;
+    
 }
+
+
 
 .join-item :hover,
 .join-item :focus {
   background-color: #2196f3;
   fill: currentColor;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .page-down .logo {
@@ -738,7 +750,7 @@ p {
 .mail-down .link:hover,
 .mail-down .link:focus {
   color: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .title-text {
@@ -770,6 +782,8 @@ p {
   padding: 6px 23px;
   border: none;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -779,7 +793,7 @@ p {
   color: var(--top-background-color);
   background-color: var(--accent-text-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
+  
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
